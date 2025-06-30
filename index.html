@@ -1,38 +1,139 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sankarakripa Foundation</title>
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sankarakripa Foundation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Serif Display', serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: 500;
+    }
+    .hero {
+      position: relative;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: url('https://lh6.googleusercontent.com/2NEukTJQoo4_vfMW-k6N9bA8rlbc2KZumqPhiIn-i-MbI9imtiJO7lgyiosvYdak19iTgnnJWb7SQW9mg3hDVgsQAjreBGlhDUZAJQMpL8ADlYQehFqukrpZgQA_1DqFoJx3vIGENp8=w16383');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.6);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 1rem 2rem;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Sankarakripa Foundation</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+  <header>
+    <h1>Sankarakripa Foundation</h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<section class="hero">
-    <img src="https://via.placeholder.com/800x400" alt="Hero Image">
-    <h2>Welcome to Sankarakripa Foundation</h2>
-    <p>Spiritual guidance and community service</p>
-</section>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Welcome to Sankarakripa</h1>
+      <p>Better health naturally</p>
+    </div>
+  </section>
 
-    </main>
-    <footer>
-        <p>&copy; 2025 Sankarakripa Foundation</p>
-    </footer>
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <p>Sankarakripa Foundation is a charitable organization dedicated to promoting spiritual values, supporting education, and uplifting communities through service. Rooted in the teachings of Sri Adi Shankaracharya, our mission is to serve selflessly.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Our Services</h3>
+    <ul>
+      <li>Annadanam (food donation)</li>
+      <li>Veda Parayana support</li>
+      <li>Educational support for students</li>
+      <li>Support for elderly and differently-abled individuals</li>
+    </ul>
+  </section>
+
+  <section class="section" id="gallery">
+    <h3>Gallery</h3>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/400x300?text=Event+1" alt="Event 1">
+      <img src="https://via.placeholder.com/400x300?text=Event+2" alt="Event 2">
+      <img src="https://via.placeholder.com/400x300?text=Event+3" alt="Event 3">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: info@sankarakripa.com<br />Phone: +91-XXXXXXXXXX</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Sankarakripa Foundation. All rights reserved.
+  </footer>
 </body>
 </html>
-
